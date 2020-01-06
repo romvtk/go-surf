@@ -125,10 +125,7 @@
 .menu {
     padding-top: 40px;
 
-
     a {
-
-
         span {
             display: block;
             font-size: 12px;
@@ -138,6 +135,35 @@
             padding-top: 6px;
             margin-bottom: 20px;
             text-transform: capitalize;
+        }
+    }
+}
+
+.menu-btn {
+    width: 60px;
+    height: 60px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid $green;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    right: 20px;
+    top: 75px;
+    z-index: 20;
+ 
+    // display: none;
+    &__inner {
+        width: 40px;
+    }
+
+    &__line {
+        height: 5px;
+        background-color: $green;
+
+        +.menu-btn__line {
+            margin-top: 5px;
         }
     }
 }
@@ -258,6 +284,12 @@
 }
 
 .surf-box {
+    &__wrapper {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
 
     background-position: center;
     background-repeat: no-repeat;
@@ -327,6 +359,7 @@
 
     .slick-list {
         min-height: 635px;
+        overflow: visible;
     }
 
     .slick-current {
@@ -399,6 +432,7 @@
     width: 23px;
     background-color: $green;
     border-radius: 50%;
+    box-shadow: 0px 0px 35px rgba(74, 246, 205, 0.837777);
 }
 
 .slider-dots__content {
@@ -514,9 +548,10 @@
     &__descr {
         margin-top: -215px;
         padding: 100px 0 0 132px;
-        min-height: 420px;
+        min-height: 320px;
         background-repeat: no-repeat;
         background-position: right center;
+        background-size: contain;
 
         .descr__head {
             position: relative;
@@ -811,7 +846,7 @@ footer {
 
     .btn {
         span {
-            padding: 17px 17px 15px ;
+            padding: 17px 17px 15px;
 
             &::after {
                 display: none !important;
@@ -827,7 +862,7 @@ footer {
     letter-spacing: 1.05px;
     opacity: 0.5;
     font-weight: 300;
-    
+
 }
 
 
